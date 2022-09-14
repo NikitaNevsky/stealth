@@ -86,7 +86,7 @@
 									</div>
 									<div class="main-intro__item">
 										<div class="main-intro__name">Почта</div>
-										<input data-validate data-error="Это поле необходимо заполнить" data-mask="email" data-required type="text" name="email" placeholder="rrk@gmail.com" class="main-intro__input">
+										<input data-validate data-error="Это поле необходимо заполнить" data-mask="email" data-required type="text" name="email" placeholder="name@mail.com" class="main-intro__input">
 									</div>
 									<div class="main-intro__item">
 										<div class="main-intro__name">Телефон</div>
@@ -97,7 +97,7 @@
 												</div>
 												<div class="main-intro__input__number">+7</div>
 											</div>
-											<input data-validate data-error="Это поле необходимо заполнить" data-mask="phone" data-required autocomplete="off" inputmode="tel" type="text" name="phone" placeholder="(926) 513-62-35" class="main-intro__input main-intro__input_phone">
+											<input data-validate data-error="Это поле необходимо заполнить" data-mask="phone" data-required autocomplete="off" inputmode="tel" type="text" name="phone" placeholder="(999) 999-99-99" class="main-intro__input main-intro__input_phone">
 										</div>
 									</div>
 								</div>
@@ -107,10 +107,10 @@
 										<div class="main-intro__accordion--item">
 											<button class="accordion">Банковской картой</button>
 											<div class="panel">
-												<div data-checkbox class="main-intro__radios">
+												<div class="main-intro__radios">
 													<div class="main-intro__line">
 														<label for="intro-main-radio-1" class="main-intro__radio radio-main-intro">
-															<input id="intro-main-radio-1" data-required id="" type="checkbox" class="radio-main-intro__input">
+															<input id="intro-main-radio-1" name="radio" type="radio" class="radio-main-intro__input" checked>
 															<span class="radio-main-intro__fake"></span>
 															<span class="radio-main-intro__text">Картой РФ</span>
 														</label>
@@ -130,13 +130,13 @@
 														</div>
 													</div>
 													<label for="intro-main-radio-2" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-2" data-required checked id="" type="checkbox" class="radio-main-intro__input">
+														<input id="intro-main-radio-2" name="radio" type="radio" class="radio-main-intro__input">
 														<span class="radio-main-intro__fake"></span>
 														<span class="radio-main-intro__text">Иностранной картой</span>
 													</label>
 													<div class="main-intro__line">
 														<label for="intro-main-radio-3" class="main-intro__radio radio-main-intro">
-															<input id="intro-main-radio-3" data-required id="" type="checkbox" class="radio-main-intro__input">
+															<input id="intro-main-radio-3" name="radio" type="radio" class="radio-main-intro__input">
 															<span class="radio-main-intro__fake"></span>
 															<span class="radio-main-intro__text">СБП</span>
 														</label>
@@ -154,19 +154,19 @@
 										<div class="main-intro__accordion--item">
 											<button class="accordion">Криптовалютой (<span>скидка 7%</span>)</button>
 											<div class="panel">
-												<div data-checkbox class="main-intro__radios">
+												<div class="main-intro__radios">
 													<label for="intro-main-radio-4" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-4" data-required id="" type="checkbox" class="radio-main-intro__input">
+														<input id="intro-main-radio-4" name="radio" type="radio" class="radio-main-intro__input">
 														<span class="radio-main-intro__fake"></span>
 														<span class="radio-main-intro__text">USDT (Tron)</span>
 													</label>
 													<label for="intro-main-radio-5" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-5" data-required checked id="" type="checkbox" class="radio-main-intro__input">
+														<input id="intro-main-radio-5" name="radio" type="radio" class="radio-main-intro__input">
 														<span class="radio-main-intro__fake"></span>
 														<span class="radio-main-intro__text">USDT (Binance smart chain)</span>
 													</label>
 													<label for="intro-main-radio-6" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-6" data-required id="" type="checkbox" class="radio-main-intro__input">
+														<input id="intro-main-radio-6" name="radio" type="radio" class="radio-main-intro__input">
 														<span class="radio-main-intro__fake"></span>
 														<span class="radio-main-intro__text">USDT (Etherium)</span>
 													</label>
@@ -178,9 +178,9 @@
 										<div class="main-intro__accordion--item">
 											<button class="accordion">Наличными (<span>скидка 7%</span>)</button>
 											<div class="panel">
-												<div data-checkbox class="main-intro__radios">
+												<div class="main-intro__radios">
 													<label for="intro-main-radio-7" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-7" data-required id="" type="checkbox" class="radio-main-intro__input">
+														<input id="intro-main-radio-7" name="radio" type="radio" class="radio-main-intro__input">
 														<span class="radio-main-intro__fake"></span>
 														<span class="radio-main-intro__text">Офис Москва-сити</span>
 													</label>
@@ -192,19 +192,19 @@
 										<div class="main-intro__accordion--item">
 											<button class="accordion">Нужна рассрочка</button>
 											<div class="panel">
-												<div data-checkbox class="main-intro__radios">
+												<div class="main-intro__radios">
 													<label for="intro-main-radio-8" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-8" data-required id="" type="checkbox" class="radio-main-intro__input">
+														<input id="intro-main-radio-8" name="radio" type="radio" class="radio-main-intro__input">
 														<span class="radio-main-intro__fake"></span>
 														<span class="radio-main-intro__text">Тинькофф, МТС</span>
 													</label>
 													<label for="intro-main-radio-9" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-9" data-required checked id="" type="checkbox" class="radio-main-intro__input">
+														<input id="intro-main-radio-9" name="radio" type="radio" class="radio-main-intro__input">
 														<span class="radio-main-intro__fake"></span>
 														<span class="radio-main-intro__text">ОТП Банк</span>
 													</label>
 													<label for="intro-main-radio-10" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-10" data-required id="" type="checkbox" class="radio-main-intro__input">
+														<input id="intro-main-radio-10" name="radio" type="radio" class="radio-main-intro__input">
 														<span class="radio-main-intro__fake"></span>
 														<span class="radio-main-intro__text">Актив Кредит</span>
 													</label>
@@ -215,7 +215,7 @@
 								</div>
 								<div class="main-intro__item main-intro__item_promocode">
 									<div class="main-intro__name">Промокод</div>
-									<input data-mask="phone" type="text" name="promocode" placeholder="Промокод" inputmode="tel" class="main-intro__input main-intro__input_promocode">
+									<input type="text" name="promocode" placeholder="ПРОМОКОД" class="main-intro__input main-intro__input_promocode" maxlength="4">
 									<div class="main-intro__promocode--sale">
 										Скидка по промокоду: отсутствует
 									</div>
@@ -224,7 +224,7 @@
 								<button data-da=".intro__row,992.98,first" class="main-intro__btn">Оплатить</button>
 								<div class="main-intro__checkboxes">
 									<label for="intro-main-checkbox-1" class="main-intro__checkbox checkbox-main-intro">
-										<input id="intro-main-checkbox-1" data-required data-error="Необходимо ознакомиться с пользовательским соглашением" checked id="" type="checkbox" class="checkbox-main-intro__input">
+										<input id="intro-main-checkbox-1" data-required data-error="Необходимо ознакомиться с пользовательским соглашением" id="" type="checkbox" class="checkbox-main-intro__input">
 										<span class="checkbox-main-intro__fake">
 											<img src="img/icons/check-black.svg" alt="check">
 										</span>

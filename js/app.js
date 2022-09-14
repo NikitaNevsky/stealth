@@ -3047,13 +3047,13 @@
                             clearMaskOnLostFocus: true
                         }).mask(targetElement);
                     }
-                    if (targetElement.classList.contains("main-intro__input_promocode")) {
-                        targetElement.classList.add("_mask");
-                        Inputmask("9999", {
-                            clearIncomplete: false,
-                            clearMaskOnLostFocus: true
-                        }).mask(targetElement);
-                    }
+                    // if (targetElement.classList.contains("main-intro__input_promocode")) {
+                    //     targetElement.classList.add("_mask");
+                    //     Inputmask("9999", {
+                    //         clearIncomplete: false,
+                    //         clearMaskOnLostFocus: true
+                    //     }).mask(targetElement);
+                    // }
                     if ("date" === targetElement.dataset.mask) {
                         targetElement.classList.add("_mask");
                         Inputmask("99.99.9999", {
