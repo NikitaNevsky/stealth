@@ -82,7 +82,7 @@
 								<div class="main-intro__items">
 									<div class="main-intro__item">
 										<div class="main-intro__name">ФИО</div>
-										<input data-validate data-error="Это поле необходимо заполнить" data-required type="text" name="fullName" placeholder="Иван Иванов Иванович" class="main-intro__input">
+										<input data-validate data-error="Это поле необходимо заполнить" data-required type="text" name="fullName" placeholder="Фамилия Имя Отчество" class="main-intro__input">
 									</div>
 									<div class="main-intro__item">
 										<div class="main-intro__name">Почта</div>
@@ -103,6 +103,15 @@
 								</div>
 								<div class="main-intro__block">
 									<div class="main-intro__title-2">Способ оплаты</div>
+									<div class="main-intro__check">
+										<label for="intro-main-checkbox" class="main-intro__checkbox checkbox-main-intro">
+											<input id="intro-main-checkbox" id="" type="checkbox" class="checkbox-main-intro__input">
+											<span class="checkbox-main-intro__fake">
+												<img src="img/icons/check-black.svg" alt="check">
+											</span>
+											<span class="checkbox-main-intro__text">Предоплата</span>
+										</label>
+									</div>
 									<div class="main-intro__accordion">
 										<div class="main-intro__accordion--item">
 											<button class="accordion">Банковской картой</button>
@@ -155,26 +164,47 @@
 											<button class="accordion">Криптовалютой (<span>скидка 7%</span>)</button>
 											<div class="panel">
 												<div class="main-intro__radios">
-													<label for="intro-main-radio-4" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-4" name="radio" type="radio" class="radio-main-intro__input">
-														<span class="radio-main-intro__fake"></span>
-														<span class="radio-main-intro__text">USDT (Tron)</span>
-													</label>
-													<label for="intro-main-radio-5" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-5" name="radio" type="radio" class="radio-main-intro__input">
-														<span class="radio-main-intro__fake"></span>
-														<span class="radio-main-intro__text">USDT (Binance smart chain)</span>
-													</label>
-													<label for="intro-main-radio-6" class="main-intro__radio radio-main-intro">
-														<input id="intro-main-radio-6" name="radio" type="radio" class="radio-main-intro__input">
-														<span class="radio-main-intro__fake"></span>
-														<span class="radio-main-intro__text">USDT (Etherium)</span>
-													</label>
+													<div class="main-intro__line">
+														<label for="intro-main-radio-4" class="main-intro__radio radio-main-intro">
+															<input id="intro-main-radio-4" name="radio" type="radio" class="radio-main-intro__input">
+															<span class="radio-main-intro__fake"></span>
+															<span class="radio-main-intro__text">USDT (Tron)</span>
+														</label>
+														<div class="main-intro__icons">
+															<div class="main-intro__icon crypto">
+																<img src="img/icons/tron-trx-logo.svg" alt="tron">
+															</div>
+														</div>
+													</div>
+													<div class="main-intro__line">
+														<label for="intro-main-radio-5" class="main-intro__radio radio-main-intro">
+															<input id="intro-main-radio-5" name="radio" type="radio" class="radio-main-intro__input">
+															<span class="radio-main-intro__fake"></span>
+															<span class="radio-main-intro__text">USDT (Binance smart chain)</span>
+														</label>
+														<div class="main-intro__icons">
+															<div class="main-intro__icon crypto">
+																<img src="img/icons/Binance_Logo.svg" alt="binance logo">
+															</div>
+														</div>
+													</div>
+													<div class="main-intro__line">
+														<label for="intro-main-radio-6" class="main-intro__radio radio-main-intro">
+															<input id="intro-main-radio-6" name="radio" type="radio" class="radio-main-intro__input">
+															<span class="radio-main-intro__fake"></span>
+															<span class="radio-main-intro__text">USDT (Etherium)</span>
+														</label>
+														<div class="main-intro__icons">
+															<div class="main-intro__icon crypto">
+																<img src="img/icons/ethereum-eth-logo.svg" alt="ethereum-eth-logo">
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="main-intro__accordion">
+									<div class="main-intro__accordion cash">
 										<div class="main-intro__accordion--item">
 											<button class="accordion">Наличными (<span>скидка 7%</span>)</button>
 											<div class="panel">
@@ -188,7 +218,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="main-intro__accordion">
+									<div class="main-intro__accordion installment">
 										<div class="main-intro__accordion--item">
 											<button class="accordion">Нужна рассрочка</button>
 											<div class="panel">
@@ -224,7 +254,7 @@
 								<button data-da=".intro__row,992.98,first" class="main-intro__btn">Оплатить</button>
 								<div class="main-intro__checkboxes">
 									<label for="intro-main-checkbox-1" class="main-intro__checkbox checkbox-main-intro">
-										<input id="intro-main-checkbox-1" data-required data-error="Необходимо ознакомиться с пользовательским соглашением" id="" type="checkbox" class="checkbox-main-intro__input">
+										<input id="intro-main-checkbox-1" data-required data-error="Необходимо ознакомиться с договором оферты" id="" type="checkbox" class="checkbox-main-intro__input">
 										<span class="checkbox-main-intro__fake">
 											<img src="img/icons/check-black.svg" alt="check">
 										</span>
@@ -266,6 +296,15 @@
 												<span>Выпускной & нетворкинг</span>
 											</div>
 										</div>
+										<div class="tabs-info-intro__price">
+											<span>0000₽</span>
+											<div class="old">
+												0000₽
+											</div>
+										</div>
+										<div class="tabs-info-intro__installment">
+											можно в рассрочку
+										</div>
 									</div>
 									<div data-tabs-block class="tabs-info-intro__content _active private">
 										<div class="tabs-info-intro__info">
@@ -296,6 +335,15 @@
 												<span>Холодный кошелёк в подарок (Ledger или SafePal)</span>
 											</div>
 										</div>
+										<div class="tabs-info-intro__price">
+											<span>0000₽</span>
+											<div class="old">
+												0000₽
+											</div>
+										</div>
+										<div class="tabs-info-intro__installment">
+											можно в рассрочку
+										</div>
 									</div>
 									<div data-tabs-block class="tabs-info-intro__content sniper">
 										<div class="tabs-info-intro__info">
@@ -317,6 +365,15 @@
 												<img src="img/icons/plus.svg" alt="check">
 												<span>Доступ в Stealth DAO</span>
 											</div>
+										</div>
+										<div class="tabs-info-intro__price">
+											<span>0000₽</span>
+											<div class="old">
+												0000₽
+											</div>
+										</div>
+										<div class="tabs-info-intro__installment">
+											можно в рассрочку
 										</div>
 									</div>
 									<div data-tabs-block class="tabs-info-intro__content vip">
@@ -343,6 +400,15 @@
 												<img src="img/icons/plus-gold.svg" alt="check">
 												<span>Дополнительные встречи в течение месяца после окончания обучения</span>
 											</div>
+										</div>
+										<div class="tabs-info-intro__price">
+											<span>0000₽</span>
+											<div class="old">
+												0000₽
+											</div>
+										</div>
+										<div class="tabs-info-intro__installment">
+											можно в рассрочку
 										</div>
 									</div>
 									<div class="tabs-info-intro__nav">
@@ -424,6 +490,7 @@
 		</button>
 	</div>
 
+	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 

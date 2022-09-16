@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Stealth Academy</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style-new.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__main">
+						<a href="/" class="header__logo">
+							<img src="img/icons/logo.svg" alt="">
+						</a>
+						<nav class="header__menu menu">
+							<a href="" class="menu__logo">
+								<img src="img/icons/logo.svg" alt="logo">
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- intro -->
+			<section class="intro">
+				<div class="intro__container">
+					<div class="intro__decors">
+						<div class="intro__decor">
+							<picture><source srcset="img/content/intro-decor-1.webp" type="image/webp"><img src="img/content/intro-decor-1.png" alt=""></picture>
+						</div>
+						<div class="intro__decor">
+							<picture><source srcset="img/content/intro-decor-2.webp" type="image/webp"><img src="img/content/intro-decor-2.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="intro__crumbs">
+						<a href="" class="intro__crumb intro__crumb_link">Главная</a>
+						<div class="intro__delimiter">/</div>
+						<div class="intro__crumb">Оформление заказа</div>
+					</div>
+					<div class="intro__logo">
+						<img src="img/images/muzika-logo.png" alt="muzika logo">
+					</div>
+					<div class="intro__title">
+						Оформление заказа
+					</div>
+					<form action="#" class="intro__form">
+						<div class="intro__row">
+							<div class="intro__main main-intro">
+								<h2 class="main-intro__title">Оформление заказа</h2>
+								<div class="main-intro__items">
+									<div class="main-intro__item">
+										<div class="main-intro__name">ФИО</div>
+										<input data-validate data-error="Это поле необходимо заполнить" data-required type="text" name="fullName" placeholder="Иван Иванов Иванович" class="main-intro__input">
+									</div>
+									<div class="main-intro__item">
+										<div class="main-intro__name">Почта</div>
+										<input data-validate data-error="Это поле необходимо заполнить" data-mask="email" data-required type="text" name="email" placeholder="name@mail.com" class="main-intro__input">
+									</div>
+									<div class="main-intro__item">
+										<div class="main-intro__name">Телефон</div>
+										<div class="main-intro__input-wrap">
+											<div class="main-intro__input-info">
+												<div class="main-intro__input-flag">
+													<img src="img/icons/flag.svg" alt="flag">
+												</div>
+												<div class="main-intro__input__number">+7</div>
+											</div>
+											<input data-validate data-error="Это поле необходимо заполнить" data-mask="phone" data-required autocomplete="off" inputmode="tel" type="text" name="phone" placeholder="(999) 999-99-99" class="main-intro__input main-intro__input_phone">
+										</div>
+									</div>
+								</div>
+								<div class="main-intro__block">
+									<div class="main-intro__title-2">Способ оплаты</div>
+									<div class="main-intro__accordion">
+										<div class="main-intro__accordion--item">
+											<button class="accordion">Банковской картой</button>
+											<div class="panel">
+												<div class="main-intro__radios">
+													<div class="main-intro__line">
+														<label for="intro-main-radio-1" class="main-intro__radio radio-main-intro">
+															<input id="intro-main-radio-1" name="radio" type="radio" class="radio-main-intro__input" checked>
+															<span class="radio-main-intro__fake"></span>
+															<span class="radio-main-intro__text">Картой РФ</span>
+														</label>
+														<div class="main-intro__icons">
+															<div class="main-intro__icon">
+																<img src="img/icons/visa.svg" alt="visa">
+															</div>
+															<div class="main-intro__icon">
+																<img src="img/icons/mastercard.svg" alt="mastercard">
+															</div>
+															<div class="main-intro__icon">
+																<img src="img/icons/mir.svg" alt="mir">
+															</div>
+															<div class="main-intro__icon">
+																<img src="img/icons/sbp.svg" alt="sbp">
+															</div>
+														</div>
+													</div>
+													<label for="intro-main-radio-2" class="main-intro__radio radio-main-intro">
+														<input id="intro-main-radio-2" name="radio" type="radio" class="radio-main-intro__input">
+														<span class="radio-main-intro__fake"></span>
+														<span class="radio-main-intro__text">Иностранной картой</span>
+													</label>
+													<div class="main-intro__line">
+														<label for="intro-main-radio-3" class="main-intro__radio radio-main-intro">
+															<input id="intro-main-radio-3" name="radio" type="radio" class="radio-main-intro__input">
+															<span class="radio-main-intro__fake"></span>
+															<span class="radio-main-intro__text">СБП</span>
+														</label>
+														<div class="main-intro__icons">
+															<div class="main-intro__icon">
+																<img src="img/icons/sbp.svg" alt="sbp">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="main-intro__accordion">
+										<div class="main-intro__accordion--item">
+											<button class="accordion">Криптовалютой (<span>скидка 7%</span>)</button>
+											<div class="panel">
+												<div class="main-intro__radios">
+													<label for="intro-main-radio-4" class="main-intro__radio radio-main-intro">
+														<input id="intro-main-radio-4" name="radio" type="radio" class="radio-main-intro__input">
+														<span class="radio-main-intro__fake"></span>
+														<span class="radio-main-intro__text">USDT (Tron)</span>
+													</label>
+													<label for="intro-main-radio-5" class="main-intro__radio radio-main-intro">
+														<input id="intro-main-radio-5" name="radio" type="radio" class="radio-main-intro__input">
+														<span class="radio-main-intro__fake"></span>
+														<span class="radio-main-intro__text">USDT (Binance smart chain)</span>
+													</label>
+													<label for="intro-main-radio-6" class="main-intro__radio radio-main-intro">
+														<input id="intro-main-radio-6" name="radio" type="radio" class="radio-main-intro__input">
+														<span class="radio-main-intro__fake"></span>
+														<span class="radio-main-intro__text">USDT (Etherium)</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="main-intro__accordion">
+										<div class="main-intro__accordion--item">
+											<button class="accordion">Наличными (<span>скидка 7%</span>)</button>
+											<div class="panel">
+												<div class="main-intro__radios">
+													<label for="intro-main-radio-7" class="main-intro__radio radio-main-intro">
+														<input id="intro-main-radio-7" name="radio" type="radio" class="radio-main-intro__input">
+														<span class="radio-main-intro__fake"></span>
+														<span class="radio-main-intro__text">Офис Москва-сити</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="main-intro__accordion">
+										<div class="main-intro__accordion--item">
+											<button class="accordion">Нужна рассрочка</button>
+											<div class="panel">
+												<div class="main-intro__radios">
+													<label for="intro-main-radio-8" class="main-intro__radio radio-main-intro">
+														<input id="intro-main-radio-8" name="radio" type="radio" class="radio-main-intro__input">
+														<span class="radio-main-intro__fake"></span>
+														<span class="radio-main-intro__text">Тинькофф, МТС</span>
+													</label>
+													<label for="intro-main-radio-9" class="main-intro__radio radio-main-intro">
+														<input id="intro-main-radio-9" name="radio" type="radio" class="radio-main-intro__input">
+														<span class="radio-main-intro__fake"></span>
+														<span class="radio-main-intro__text">ОТП Банк</span>
+													</label>
+													<label for="intro-main-radio-10" class="main-intro__radio radio-main-intro">
+														<input id="intro-main-radio-10" name="radio" type="radio" class="radio-main-intro__input">
+														<span class="radio-main-intro__fake"></span>
+														<span class="radio-main-intro__text">Актив Кредит</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="main-intro__item main-intro__item_promocode">
+									<div class="main-intro__name">Промокод</div>
+									<input type="text" name="promocode" placeholder="ПРОМОКОД" class="main-intro__input main-intro__input_promocode" maxlength="4">
+									<div class="main-intro__promocode--sale">
+										Скидка по промокоду: отсутствует
+									</div>
+								</div>
+								<div class="main-intro__final">Итого к оплате: <span>299.000₽</span></div>
+								<button data-da=".intro__row,992.98,first" class="main-intro__btn">Оплатить</button>
+								<div class="main-intro__checkboxes">
+									<label for="intro-main-checkbox-1" class="main-intro__checkbox checkbox-main-intro">
+										<input id="intro-main-checkbox-1" data-required data-error="Необходимо ознакомиться с пользовательским соглашением" id="" type="checkbox" class="checkbox-main-intro__input">
+										<span class="checkbox-main-intro__fake">
+											<img src="img/icons/check-black.svg" alt="check">
+										</span>
+										<span class="checkbox-main-intro__text">Я принимаю все условия <a href="#">договора оферты</a></span>
+									</label>
+									<label for="intro-main-checkbox-2" class="main-intro__checkbox checkbox-main-intro">
+										<input id="intro-main-checkbox-2" data-required data-error="Необходимо дать согласие на обработку персональных данных" id="" type="checkbox" class="checkbox-main-intro__input">
+										<span class="checkbox-main-intro__fake">
+											<img src="img/icons/check-black.svg" alt="check">
+										</span>
+										<span class="checkbox-main-intro__text">Я даю согласие на обработку <a href="#">персональных данных</a></span>
+									</label>
+								</div>
+							</div>
+							<div class="intro__info info-intro">
+								<div data-tabs class="info-intro__tabs tabs-info-intro">
+									<div data-tabs-block class="tabs-info-intro__content hitman">
+										<div class="tabs-info-intro__info">
+											<div class="tabs-info-intro__title">Hitman</div>
+											<div class="tabs-info-intro__image">
+												<img src="img/icons/hitman.svg" alt="hitman">
+											</div>
+										</div>
+										<div class="tabs-info-intro__skills skills">
+											<div class="skills__item">
+												<img src="img/icons/check.svg" alt="check">
+												<span>Тесты и дз к каждому учебному модулю</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/check.svg" alt="check">
+												<span>Zoom-сессии в процессе обучения</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/check.svg" alt="check">
+												<span>Закрытый Discord-чат #private-team</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/check.svg" alt="check">
+												<span>Выпускной & нетворкинг</span>
+											</div>
+										</div>
+									</div>
+									<div data-tabs-block class="tabs-info-intro__content _active private">
+										<div class="tabs-info-intro__info">
+											<div class="tabs-info-intro__title">Private</div>
+											<div class="tabs-info-intro__image">
+												<img src="img/images/private.png" alt="Private">
+											</div>
+										</div>
+										<div class="tabs-info-intro__skills skills">
+											<div class="skills__item">
+												<img src="img/icons/check-blue.svg" alt="check">
+												<span>Все, что входит в пакет SNIPER</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus-blue.svg" alt="check">
+												<span>Вводный Zoom-семинар</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus-blue.svg" alt="check">
+												<span>Анализ портфеля с куратором в конце обучения</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus-blue.svg" alt="check">
+												<span>Личные двухчасовые встречи</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus-blue.svg" alt="check">
+												<span>Холодный кошелёк в подарок (Ledger или SafePal)</span>
+											</div>
+										</div>
+									</div>
+									<div data-tabs-block class="tabs-info-intro__content sniper">
+										<div class="tabs-info-intro__info">
+											<div class="tabs-info-intro__title">Sniper</div>
+											<div class="tabs-info-intro__image">
+												<img src="img/images/box.png" alt="Sniper">
+											</div>
+										</div>
+										<div class="tabs-info-intro__skills skills">
+											<div class="skills__item">
+												<img src="img/icons/check-green.svg" alt="check">
+												<span>Все, что входит в пакет HITMAN</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus.svg" alt="check">
+												<span>Индивидуальный доступ к углублённому курсу DeFi со скидкой</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus.svg" alt="check">
+												<span>Доступ в Stealth DAO</span>
+											</div>
+										</div>
+									</div>
+									<div data-tabs-block class="tabs-info-intro__content vip">
+										<div class="tabs-info-intro__info">
+											<div class="tabs-info-intro__title">VIP/VIP+</div>
+											<div class="tabs-info-intro__image">
+												<img src="img/images/vip.png" alt="VIP/VIP+">
+											</div>
+										</div>
+										<div class="tabs-info-intro__skills skills">
+											<div class="skills__item">
+												<img src="img/icons/check-gold.svg" alt="check">
+												<span>Все, что входит в пакет PRIVATE</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus-gold.svg" alt="check">
+												<span>Личное наставничество</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus-gold.svg" alt="check">
+												<span>Составление, анализ и ребалансировка портфеля с куратором в течение обучения</span>
+											</div>
+											<div class="skills__item">
+												<img src="img/icons/plus-gold.svg" alt="check">
+												<span>Дополнительные встречи в течение месяца после окончания обучения</span>
+											</div>
+										</div>
+									</div>
+									<div class="tabs-info-intro__nav">
+										<div data-tabs-item class="tabs-info-intro__tab hitman">
+											<div class="tabs-info-intro__tab-text">Hitman</div>
+										</div>
+										<div data-tabs-item class="tabs-info-intro__tab private _active">
+											<div class="tabs-info-intro__tab-text">Private</div>
+										</div>
+										<div data-tabs-item class="tabs-info-intro__tab sniper">
+											<div class="tabs-info-intro__tab-text">Sniper</div>
+										</div>
+										<div data-tabs-item class="tabs-info-intro__tab vip">
+											<div class="tabs-info-intro__tab-text">VIP/VIP+</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- intro end -->
+		</main>
+
+		<footer class="footer">
+			<div class="footer__bg">
+				<img src="img/icons/grid-down.svg" alt="grid footer">
+			</div>
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__logo">
+						<a href="/">
+							<img src="img/icons/logo.svg" alt="logo">
+						</a>
+					</div>
+					<div class="footer__icons">
+						<a href="https://t.me/StealthAcademySupport_bot" class="footer__icon">
+							<img src="img/icons/icon tg.svg" alt="telegram">
+						</a>
+						<a href="https://instagram.com" class="footer__icon">
+							<img src="img/icons/icon ig.svg" alt="ig">
+						</a>
+						<a href="https://twitter.com" class="footer__icon">
+							<img src="img/icons/twitter.svg" alt="twitter">
+						</a>
+					</div>
+				</div>
+				<div class="footer__row">
+					<div class="footer__column">
+						<div class="footer__item">ИНН 9704001800</div>
+						<div class="footer__item">ОГРН 1197746576280</div>
+						<a href="https://stealth-academy.com/files/privacy_policy.pdf" class="footer__item footer__item_link">Политика конфиденциальности</a>
+						<a href="https://stealth-academy.com/files/offer_agreement.pdf" class="footer__item footer__item_link">Договор оферты</a>
+					</div>
+				</div>
+				<div class="footer__text">© ООО «Сега Групп»</div>
+			</div>
+		</footer>
+		<button class="chat">
+			<img src="img/icons/chat.svg" alt="chat">
+		</button>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>
